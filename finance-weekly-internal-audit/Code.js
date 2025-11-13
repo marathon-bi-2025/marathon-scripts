@@ -333,12 +333,7 @@ function sendFormattedEmail() {
   }
 }
 
-/**
- * Converts a 2D array of spreadsheet data into an HTML table string,
- * applying conditional formatting for 'Pass' and 'Fail' values.
- * @param {Array<Array<any>>} data The 2D array of data.
- * @return {string} The HTML table string.
- */
+
 function convertDataToHtmlTable(data) {
   let html = '<table style="border-collapse: collapse; width: auto; font-family: Arial, sans-serif;">';
 
