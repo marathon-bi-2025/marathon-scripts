@@ -181,14 +181,11 @@ function onEdit(e) {
     const minutes = now.getMinutes().toString().padStart(2, '0');
     const seconds = now.getSeconds().toString().padStart(2, '0');
 
-    // Determine AM or PM period
     const period = hours >= 12 ? 'PM' : 'AM';
 
-    // Convert to 12-hour format
     hours = hours % 12;
     hours = hours ? hours : 12; // if hour is 0 (midnight), change it to 12
 
-    // Format the final string
     const formattedTime = `${hours}:${minutes}:${seconds} ${period}`;
 
     if (col === dropdownCol) {
